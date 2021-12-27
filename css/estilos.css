@@ -5,6 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #4d0686;
+    border-radius: 5rem;
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -23,6 +33,11 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+}
+.logo a 
+{
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Header */
@@ -104,9 +119,9 @@ main .sobre-nosotros{
     max-inline-size: 550px;
     margin: auto;
     color: rgb(0, 0, 0);
-  }
+}
 
-  .form label {
+.form label {
     display: block;
     margin-block-start: 1em;
     margin-block-end: .5em;
@@ -278,7 +293,6 @@ main .sobre-nosotros{
 footer{
     background-image: linear-gradient(-225deg, #d3d3d3bb 0%, #464646d2 100%);
     padding: 60px;
-    margin: 20px;
     overflow: hidden;
     color: #fff;
 }
@@ -297,8 +311,8 @@ footer{
 }
 
 .content-foo h4{
+    font-size: 20px;
     color: #fff;
-    border-bottom: 3px solid #af20d3;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -403,7 +417,7 @@ nav{
 }
 
 .menu{
-   display: flex; 
+    display: flex; 
 }
 
 .menu li{
