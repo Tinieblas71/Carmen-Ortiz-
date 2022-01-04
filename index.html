@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/Carmen Ortiz.png" type="image/x-icon">
-    <title>Asesora Carmen Ortiz</title>
+    <title id="title">Asesora Carmen Ortiz</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -18,181 +18,175 @@
 <body>
     <header>
         <section>
-            <nav>
+            <nav id="nav">
                 <div class="logo">
-                    <a href="#productos">Carmen Ortiz</a>
+                    <a href="#productos" id="logo">Carmen Ortiz</a>
                 </div>
-                <ul class="menu">
-                    <li><a href="#productos" class="menu-i">Inicio</a></li>
-                    <li><a href="#propiedades" class="menu-i">Productos</a></li>
-                    <li><a href="#contacto" class="menu-i">Contacto</a></li>
+                <ul class="menu" id="bar">
+                    <li><a href="#productos" class="menu-i" id="EnglishHome">Inicio</a></li>
+                    <li><a href="#propiedades" class="menu-i"id="EnglishProducts">Productos</a></li>
+                    <li><a href="#contacto" class="menu-i" id="EnglishContact">Contacto</a></li>
+                    <li><img loading="lazy" src="img/Ingles1.png" id="ingles" onclick="CambiarIdioma()"></li>
+                    <li><i class="far fa-moon fa-2x" id="darkMODE"></i></li>
                 </ul>
                 <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-align-right"></i>
                 </div>
             </nav>
         </section>
-
-        <section class="textos-header">
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
     </header>
     <div id="productos"></div>
-    <main>
+    <main id="darkmode">
         <section class="contenedor sobre-nosotros">
-            <h2 class="titulo" id="productos">Nuestro producto</h2>
-            <h3 style="text-align: center; padding: 1.2rem;">Dieciséis años de experiencia en el sector inmobiliario, profesional con el conocimiento, aptitud y habilidades necesarias para desarrollar con
+            <h2 class="titulo" id="productos EnglishProducts1">Nuestro producto: </h2>
+            <h3 style="text-align: center; padding: 1.2rem;" id="EnglishAdiviser">Dieciséis años de experiencia en el sector inmobiliario, profesional con el conocimiento, aptitud y habilidades necesarias para desarrollar con
                 éxito lo siguiente:</h3>
-                <h4 style="text-align: center; font-size: 15px; padding: 1rem;">Sixteen years of experience in the real estate sector, professional with the knowledge, aptitude and skills necessary to successfully develop the following: </h4>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/Carmen Ortiz.png" alt="" class="imagen-about-us" style="width: 70%; padding: 25px;">
+                <img src="img/Carmen Ortiz.png"class="imagen-about-us" style="width: 70%; padding: 25px;">
                 <div class="contenido-textos">
-                    <h3><span>1</span>Prospectar bienes inmuebles para su compra, venta y renta.</h3>
-                    <p>Prospecting real estate for purchase, sale and rent.</p>
-                    <h3><span>2</span>Conocimiento y aplicación de técnicas de prospección para identificar bienes inmuebles sujetos a comercialización.</h3>
-                    <p>Knowledge and application of prospecting techniques to identify real estate subject to commercialization.</p>
-                    <h3><span>3</span>Identificar la vialidad de la compraventa o renta del inmueble.</h3>
-                    <p> Identify the viability of the sale or rental of the property.</p>
-                    <h3><span>4</span>Indicar derechos obligaciones fiscales correspondientes a la compra, venta o renta del inmueble.</h3>
-                    <p>Indicate mandatory tax rights to the purchase, sale or rent of the property.</p>
-                    <h3><span>5</span>Realización del acompañamiento desde su prospección hasta la firma de las escrituras.</h3>
-                    <p id="propiedades">Accomplishment of the accompaniment from its prospecting to the signing of the scriptures.</p>
+                    <h3 id="EnglishPoints1"><span>1</span>Prospectar bienes inmuebles para su compra, venta y renta.</h3>
+                    <br><br>
+                    <h3 id="EnglishPoints2"><span>2</span>Conocimiento y aplicación de técnicas de prospección para identificar bienes inmuebles sujetos a comercialización.</h3>
+                    <br><br>
+                    <h3 id="EnglishPoints3"><span>3</span>Identificar la vialidad de la compraventa o renta del inmueble.</h3>
+                    <br><br>
+                    <h3 id="EnglishPoints4"><span>4</span>Indicar derechos obligaciones fiscales correspondientes a la compra, venta o renta del inmueble.</h3>
+                    <br><br>
+                    <h3 id="EnglishPoints5"><span>5</span>Realización del acompañamiento desde su prospección hasta la firma de las escrituras.</h3>
+                    <br><br>
+                    <div id="propiedades"></div>
                 </div>
             </div>
         </section>
         <section class="portafolio">
             <div class="contenedor">
-                <h2 class="titulo"id="propiedades" style="padding: -15px;">Ofrecemos: <br> <small>We offer: </small> </h2>
+                <h2 class="titulo EnglishWeOffer" style="padding: -15px;">Ofrecemos: </h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img loading="lazy" src="img/casa1.PNG" alt="">
+                        <img loading="lazy" src="img/casa1.PNG">
                         <div class="hover-galeria">
-                            <p>Mina "el Sol" cuenta con una superficie de 4,300 hectáreas, ubicada en la localidad de Jalapa, perteneciente al municiipo de Parras, Estado de Coahuila, México y cuenta con una concesión minera de 50 años vigente hasta 2063<a href="presentaciones/Comparto 'p.p. EL SOL' con usted-convertido (1).pdf">leer más</a></p>
+                            <p id="EnglishProps1">Mina "El Sol" cuenta con una superficie de 4,300 hectáreas, ubicada en la localidad de Jalapa, perteneciente al municiipo de Parras, Estado de Coahuila, México y cuenta con una concesión minera de 50 años vigente hasta 2063 <br><a href="presentaciones/Comparto 'p.p. EL SOL' con usted-convertido (1).pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img loading="lazy" src="img/casa2.PNG" alt="">
+                        <img loading="lazy" src="img/casa2.PNG">
                         <div class="hover-galeria">
-                            <p>El viñedo San Miguel es una casa finamente amueblada, de lujo que tiene su propio viñedo para producir vino de la más alta calidad<a href="presentaciones/Viñedo San Miguel.pdf">leer más</a></p>
+                            <p id="EnglishProps2">El viñedo San Miguel es una casa finamente amueblada, de lujo que tiene su propio viñedo para producir vino de la más alta calidad <br><a href="presentaciones/Viñedo San Miguel.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/casa3.PNG" alt="">
+                        <img src="img/casa3.PNG">
                         <div class="hover-galeria">
-                            <p>Un terreno ubicado en la zona sur de "Isla Mujeres", Q. Roo. México;
+                            <p id="EnglishProps3">Un terreno ubicado en la zona sur de "Isla Mujeres", Q. Roo. México;
                             Que cuenta con una superficie total de 63,000.00 m2. <br> <a href="presentaciones/TERRENO ISLA MUJERES 2019.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa4.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Tequilera cuenta con una superfice de 17,000 m2. Con una capacidad de producción de 23, 000 lts de tequila que puede ser aumentado 15, 000 litros más. 100% de agave a 55 grados de alcohol vol.<a href="presentaciones/PRESENTACION TEQUILERA LL.pdf">leer más</a></p>
+                            <p id="EnglishProps4">Tequilera cuenta con una superfice de 17,000 m2. Con una capacidad de producción de 23, 000 lts de tequila que puede ser aumentado 15, 000 litros más. 100% de agave a 55 grados de alcohol vol. <br> <a href="presentaciones/PRESENTACION TEQUILERA LL.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa5.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Mina "La Perla" ubicada en Zacatecas con una superficie de 400 hectáreas (incluyendo la tierra), en la que puedes encontar mayormente litio (Li)<a href="presentaciones/PDF LA PERLA.pdf">leer más</a></p>
+                            <p id="EnglishProps5">Mina "La Perla" ubicada en Zacatecas con una superficie de 400 hectáreas (incluyendo la tierra), en la que puedes encontar mayormente litio (Li) <br> <a href="presentaciones/PDF LA PERLA.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa6.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Lotes de terreno de 10, 000 y 14, 447 m2 ubicado en Blvd. Kukulcán Km. 14.5 Retorno San Miguelito Lote 51-A y 51-C, Zona hotelera, Cancún México<a href="presentaciones/La Ultima Joya en el Caribe   Mexicano.pdf">leer más</a></p>
+                            <p id="EnglishProps6">Lotes de terreno de 10, 000 y 14, 447 m2 ubicado en Blvd. Kukulcán Km. 14.5 Retorno San Miguelito Lote 51-A y 51-C, Zona hotelera, Cancún México <br> <a href="presentaciones/La Ultima Joya en el Caribe   Mexicano.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa7.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Hotel "Mesones" ubicado en la calle Mesones, colonia centro, alcaldía Cuauhtémoc CDMX, que cuenta con una construcción de 1, 740.00 m2 y un terreno de 525.00 m2.<a href="presentaciones/HOTEL MESONES CDMX.pdf">leer más</a></p>
+                            <p id="EnglishProps7">Hotel "Mesones" ubicado en la calle Mesones, colonia centro, alcaldía Cuauhtémoc CDMX, que cuenta con una construcción de 1, 740.00 m2 y un terreno de 525.00 m2. <br> <a href="presentaciones/HOTEL MESONES CDMX.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa8.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Mina de mercurio, se encuentra en el Estado de Guerrero colindando con el Estado de México, cuenta con una superficie total de 200 hectáreas y cuenta con una conseción minera hasta  octubre del 2056.<a href="presentaciones/MINA DE MERCURIO.pdf">leer más</a></p>
+                            <p id="EnglishProps8">Mina de mercurio, se encuentra en el Estado de Guerrero colindando con el Estado de México, cuenta con una superficie total de 200 hectáreas y cuenta con una conseción minera hasta  octubre del 2056. <br> <a href="presentaciones/MINA DE MERCURIO.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa9.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Terreno situado en el corazón de la Riviera Maya, ubicado en el kilometro 287 de la carretera de la Playa de Carmen-Tulúm. Cuenta con un frente de playa de 1, 500 metros lineales.<a href="presentaciones/297 Has Punta Venado PDF.pdf">leer más</a></p>
+                            <p id="EnglishProps9">Terreno situado en el corazón de la Riviera Maya, ubicado en el kilometro 287 de la carretera de la Playa de Carmen-Tulúm. Cuenta con un frente de playa de 1, 500 metros lineales.<br> <a href="presentaciones/297 Has Punta Venado PDF.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa10.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Hotel & Suite ubicado en el corazón de Playa del Carmen, con habitaciones suites de 1 y 2 recamaras.<a href="presentaciones/BLUE PALMS PLAYA DEL CARMEN.pdf">leer más</a></p>
+                            <p id="EnglishProps10">Hotel & Suite ubicado en el corazón de Playa del Carmen, con habitaciones suites de 1 y 2 recamaras.<br> <a href="presentaciones/BLUE PALMS PLAYA DEL CARMEN.pdf">leer más</a></p>
                         </div>
                     </div>
                         <div class="imagen-port"> 
                         <img loading="lazy" src="img/casa11.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Mina ubicada en los límites del Estado de México y el Estado de Guerrero y teniendo una superficie de 5, 47 hectáreas, se tiene tres cuerpos de oro, plata y cobre.<a href="presentaciones/MINA ESTADO DE MÉXICO.pdf">leer más</a></p>
+                            <p id="EnglishProps11">Mina ubicada en los límites del Estado de México y el Estado de Guerrero y teniendo una superficie de 5, 47 hectáreas, se tiene tres cuerpos de oro, plata y cobre.<br><a href="presentaciones/MINA ESTADO DE MÉXICO.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa17.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Departamento en renta, todo equipado en el piso quince a cinco minutos de Santa Fé, Ciudad de México. <br> <a href="presentaciones/Puerta Santa Lucia 2.pdf">leer más</a></p>
+                            <p id="EnglishProps17">Departamento en renta, todo equipado en el piso quince a cinco minutos de Santa Fé, Ciudad de México. <br> <a href="presentaciones/Puerta Santa Lucia 2.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa12.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Fabrica tequilera <br> <a href="presentaciones/tequlera2.pdf">leer más</a></p>
+                            <p id="EnglishProps12">Fabrica tequilera <br> <a href="presentaciones/tequlera2.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa13.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Departamentos de lujo. <br> <a href="presentaciones/24 depas.pdf">leer más</a></p>
+                            <p id="EnglishProps13">Departamentos de lujo. <br> <a href="presentaciones/24 depas.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa14.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Terreno de 39,036 m2 ubicado en la Glorieta Vasco de Quiroga, Santa Fé, Cuidad de México . <br> <a href="presentaciones/terreno vasco.pdf">leer más</a></p>
+                            <p id="EnglishProps14">Terreno de 39,036 m2 ubicado en la Glorieta Vasco de Quiroga, Santa Fé, Cuidad de México . <br> <a href="presentaciones/terreno vasco.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa 15 3.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Departamentos de lujo, ubicados en Divición Del Norte, Coyoacán, CDMX . <br> <a href="presentaciones/depas fachas.pdf">leer más</a></p>
+                            <p id="EnglishProps15">Departamentos de lujo, ubicados en División Del Norte, Coyoacán, CDMX . <br> <a href="presentaciones/depas fachas.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa16.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Mina de oro. <br> <a href="presentaciones/reservas proyexto cis.pdf">leer más</a></p>
+                            <p id="EnglishProps16">Mina de oro. <br> <a href="presentaciones/reservas proyexto cis.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa18.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Rancho Tamuin ubicado en San Luis Potosí, preparado para la ganadería y agricultura. <br> <a href="presentaciones/rancho.pdf">leer más</a></p>
+                            <p id="EnglishProps18">Rancho Tamuin ubicado en San Luis Potosí, preparado para la ganadería y agricultura. <br> <a href="presentaciones/rancho.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa19.PNG" alt="">
                         <div class="hover-galeria">
-                            <p>Hermosa casa frente al mar con vista a Isla Mujeres cuenta con 471.74 m2 más 20 m2 de Zona Federal y 586.33  m2 contruidos sin contar la cochera. <br> <a href="presentaciones/zona cancun.pdf">leer más</a></p>
+                            <p id="EnglishProps19">Hermosa casa frente al mar con vista a Isla Mujeres cuenta con 471.74 m2 más 20 m2 de Zona Federal y 586.33  m2 contruidos sin contar la cochera. <br> <a href="presentaciones/zona cancun.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
                         <img loading="lazy" src="img/casa20.PNG" alt="">
                         <div class="hover-galeria">
-                            <p id="contacto">Inmueble ubicado en Tulum, Quintana Roo, México. <br> <a href="presentaciones/kaybe.pdf">leer más</a></p>
+                            <p id="EnglishProps20">Inmueble ubicado en Tulum, Quintana Roo, México. <br> <a href="presentaciones/kaybe.pdf">leer más</a></p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img loading="lazy" src="img/Casa21.png" alt="" loading>
+                        <img loading="lazy" src="img/Casa21.png">
                         <div class="hover-galeria">
-                            <p id="contacto"> Terreno de 100 hectáreas con excelente vías de
+                            <p id="EnglishProps21"> Terreno de 100 hectáreas con excelente vías de
                                 comunicación apto para proyecto eco turismo Residencial
                                 y Áreas comerciales. <br> <a href="presentaciones/Terreno en Macahuite Pochutla Oaxaca(1)[1721].pdf">leer más</a></p>
                         </div>
@@ -208,21 +202,21 @@
         <div class="contact-content">
     
             <form  action="https://formspree.io/f/xoqyzkln"
-            method="POST" class="form">
-            <h3 class="tag title"style="font-size: 20px;"><span>¡HABLEMOS!<br><small>¡LET´S TALK!</small></span></h3>
-            <label for="name">Nombre Completo<span>*</span><br> <small>Full Name</small><span>*</span></label>
+            method="POST" class="form" id="contacto">
+            <h3 class="tag title"style="font-size: 20px;"><span id="contactEnglish">¡HABLEMOS!</span></h3>
+            <label for="name" id="contactEnglish2">Nombre Completo<span>*</span></label>
             <input name="name" required type="text" id="name">
-            <label for="email">Correo electrónico <span>*</span> <br> <small>Email</small><span>*</span></label>
+            <label for="email" id="contactEnglish3">Correo electrónico <span>*</span></label>
             <input name="_replyto" type="email" id="email" required placeholder="example@domain.com">
-            <label for="message">Mensaje <span>*</span><br> <small>Message</small> <span>*</span></label>
+            <label for="message"id="contactEnglish4">Mensaje <span>*</span></label>
             <textarea id="message" name="message" id="textarea" cols="30" rows="10"></textarea>
-            <button type="submit" class="btn-primary-full">¡Enviar mensaje! <br> <small>¡Send Message!</small></button>
+            <button type="submit" class="btn-primary-full" id="contactEnglish5">¡Enviar mensaje!</button>
             </form>
         </div>
         </div>
-    </section>
+    </section>  
 
-    <footer>
+    <footer id="foo">
         <div class="content-foo">
             <h4>carmenocbienesraices@gmail.com</h4>
         </div>
