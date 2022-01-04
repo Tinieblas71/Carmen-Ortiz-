@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root
+{
+    --productDark: #15001a;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -12,14 +16,68 @@ html::-webkit-scrollbar {
     width: 1rem;
 }
 html::-webkit-scrollbar-thumb {
-    background-color: #4d0686;
+    background-color: #645f68;
     border-radius: 5rem;
+}
+.DARK#html::-webkit-scrollbar-thumb{
+    background: #645f68;
+    transition:ease-in-out;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+#darkMODE
+{
+    color: #143E5E;
+}
+.i#darkMODE
+{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #F8C54B;
+    transition: 0.5s;
+    filter: brightness(10px 10px);
+}
 
+.DARK
+{
+    background: var(--productDark);
+    color: #ffffff;
+    transition: 1.5s;
+}
+.DARK .titulo
+{
+    color: #ffffff;
+}
+
+.DARK .portafolio
+{
+    background: var(--productDark);
+    transition: 1.5s;
+    transition:ease-in-out;
+}
+.DARK.contact
+{
+    background: var(--productDark);
+    transition:ease-in-out;
+    color: #ffffff;
+    transition: 1.5s;
+}
+
+.DARK.contact form {
+    color: #ffffff;
+}
+
+.DARK #foo 
+{
+    background-image: linear-gradient(to top, #645f68 10%, #15001a 100%);
+    transition: ease 0.5s;
+}
+
+#ingles{
+    border-bottom: 3px solid #D82D2D;
+}
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -37,7 +95,7 @@ body {
 .logo a 
 {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Header */
@@ -60,17 +118,6 @@ header .textos-header{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-.textos-header{
-    font-weight: 300;
-    color:rgb(0, 0, 0);
-}
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /* About us */
@@ -163,9 +210,6 @@ main .sobre-nosotros{
 /* Galeria */
 
 
-.portafolio{
-    background-color: rgba(204, 204, 204, 0.315);
-}
 
 .galeria-port{
     display: flex;
@@ -219,43 +263,6 @@ main .sobre-nosotros{
     transform: scale(1);
 }
 
-/* Clients */
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards .card{
-    background: rgba(170, 169, 169, 0.822);
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
-
 /*  Our team */
 
 .about-services{
@@ -296,6 +303,7 @@ footer{
     overflow: hidden;
     color: #fff;
 }
+
 
 .contenedor-footer{
     display: flex;
@@ -402,13 +410,14 @@ footer{
 }
 
 nav{
-    position: fixed;
+    position: static;
     width: 100%;
     height: 8vh;
     background-color: #ccc;
     display: flex;
     justify-content: space-between;
     padding: 0, 50px;
+    z-index: 1000;
 }
 
 .logi{
@@ -434,6 +443,12 @@ nav{
 
 .menu .menu-i:hover{
     color: #000000;
+}
+
+.menu img  
+{
+    margin-top: -5px;
+    margin-bottom: 0px;
 }
 
 .menu-btn{
