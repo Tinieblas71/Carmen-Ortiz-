@@ -12,11 +12,6 @@
     const contact = document.querySelector(".contact");
     const foo = document.getElementById("foo");
     const nav = document.getElementById("nav");
-    const html = document.getElementById("html");
-    const menu1 = document.getElementById("EnglishProducts");
-    const menu2 = document.getElementById("EnglishHome");
-    const menu3 = document.getElementById("EnglishContact");
-    const logo = document.getElementById("logo");
 
     icono.addEventListener('click', () => {
         Main.classList.toggle('DARK');
@@ -24,17 +19,12 @@
         foo.classList.toggle('DARK');
         icono.classList.toggle('i');
         nav.classList.toggle('DARK');
-        html.classList.toggle('DARK');
-        menu1.classList.toggle('DARK');
-        menu2.classList.toggle('DARK');
-        menu3.classList.toggle('DARK');
-        logo.classList.toggle('DARK');
     });
 
     //Cambiar Idioma
     const banderaING = document.getElementById("ingles");
 
-    function CambiarIdioma(){
+    banderaING.addEventListener('click', () => {
         //titulo
         document.getElementById("title").innerHTML = "Advisor Carmen Ortiz"
         //Nav
@@ -79,4 +69,4 @@
         document.getElementById("contactEnglish4").innerHTML = "Message <span>*</span>";
         document.getElementById("contactEnglish5").innerHTML = "¡Send Message!";
         banderaING.style.borderBottomColor = "#2ED82D";
-    }
+    })
