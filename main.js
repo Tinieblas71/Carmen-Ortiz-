@@ -2,9 +2,17 @@
     const menu = document.querySelector('.menu');
     const btn = document.querySelector('.menu-btn');
 
-    btn.addEventListener('click', () => {
+   /* btn.addEventListener('click', () => {
         menu.classList.toggle('active')
-    });
+    }); */
+
+    document.querySelector('.menu-btn').onclick = () => {
+        menu.classlist.toggle('active');    
+    }
+    
+    window.onscroll = () => {
+        menu.classlist.remove('active');
+    }
 
     //Dark Mode
     const icono = document.getElementById("darkMODE");
