@@ -126,7 +126,7 @@ function EnviarMensaje(){
     let name = document.querySelector('#inputname').value;
     let mensaje = document.querySelector('#inputmensaje').value;
 
-    let url = "https://api.whatsapp.com/send?phone=525612807356&text=Hola!%20: %0A" + name + "%0A%0AMensaje: %0A" + mensaje + "%0A";
+    let url = "https://api.whatsapp.com/send?phone=5586129057&text=Hola!%20: %0A" + name + "%0A%0AMensaje: %0A" + mensaje + "%0A";
     window.open(url);
     // Salto de línea con %0A
 
