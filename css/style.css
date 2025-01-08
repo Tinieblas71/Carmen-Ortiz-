@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 :root {
-  --red:#6e0e8b;
+  --red:#ffaa00;
   --black:#333;
   --white:#fff;
   --light-color:#666;
   --light-bg:#eee;
-  --hv: #ac0bdd;
+  --hv: #afd3ff05;
+  --azuL: #0059ff;
 }
 
 * {
@@ -71,7 +72,7 @@ section {
 }
 
 .btn:hover {
-  background: var(--red);
+  background: var(--azuL);
   color: #fff;
 }
 .wtsbtn { 
@@ -129,7 +130,7 @@ section {
 
 .header .navbar a {
   margin-right: 2rem;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   color: var(--light-color);
 }
 .header .navbar a:hover {
@@ -218,7 +219,7 @@ section {
 }
 
 .home .box {
-  min-height: 70vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,13 +257,20 @@ section {
           flex: 1 1 42rem;
 }
 
+.home { 
+  height: 100vh;
+}
+
 .home .box .content h3 {
-  font-size: 3rem;
+  font-size: 7rem;
   color: var(--black);
+  background: linear-gradient(to right, #0059ff, #ffa600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home .box .content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--light-color);
   padding: 1rem 0;
   line-height: 2;
@@ -571,7 +579,7 @@ section {
 }
 
 .newsletter form .btn:hover {
-  background: var(--red);
+  background: var(--azuL);
 }
 
 .image-icon-whatsapp{
@@ -889,7 +897,7 @@ label{
   font-size: 1.7rem;
 }
 #popup a:hover {
-  background: #6e0e8b;
+  background: var(--azuL);
   color: #fff;
 }
 #popup.desp
@@ -987,7 +995,7 @@ label{
 }
 
 .img-slider .navigation .btns.active{
-  background: #6e0e8b;
+  background: var(--azul);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -1076,10 +1084,10 @@ label{
 }
 .link-pdf { 
   text-decoration: none;
-  color: #ac0bdd;
+  color: var(--red);
   cursor: pointer;
 }
 .link-pdf:hover{
-  border-bottom: 2px dashed #ac0bdd;
+  color: #abc5ff;
 }
 .x{visibility: hidden;}
